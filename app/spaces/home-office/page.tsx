@@ -1,30 +1,30 @@
+import Link from "next/link";
+
 export default function HomeOffice() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      {/* Navigation */}
       <nav className="border-b border-gray-200 bg-white px-6 py-5">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <a href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold">
             SmartSpace
-          </a>
+          </Link>
 
           <div className="flex items-center gap-6 text-sm font-medium text-gray-600">
-            <a href="/" className="hover:text-gray-900">
+            <Link href="/" className="hover:text-gray-900">
               Home
-            </a>
+            </Link>
 
-            <a href="/spaces" className="hover:text-gray-900">
+            <Link href="/spaces" className="hover:text-gray-900">
               Spaces
-            </a>
+            </Link>
 
-            <a href="/#tips" className="hover:text-gray-900">
+            <Link href="/#tips" className="hover:text-gray-900">
               Tips
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
       <section className="bg-gray-950 px-6 py-20 text-white">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-gray-400">
@@ -42,7 +42,6 @@ export default function HomeOffice() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="px-6 py-16">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold">
@@ -102,7 +101,6 @@ export default function HomeOffice() {
             </article>
           </div>
 
-          {/* Special Section */}
           <div className="mt-12 rounded-3xl bg-gray-100 p-8">
             <h2 className="text-2xl font-bold">
               Small workspace without a separate room?
@@ -115,7 +113,6 @@ export default function HomeOffice() {
             </p>
           </div>
 
-          {/* Checklist */}
           <div className="mt-8 rounded-3xl border border-gray-200 p-8">
             <h2 className="text-2xl font-bold">
               Quick home office organization checklist
@@ -132,7 +129,6 @@ export default function HomeOffice() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-gray-200 px-6 py-8">
         <div className="mx-auto max-w-6xl text-center text-sm text-gray-500">
           © 2026 SmartSpace. Smart ideas for better living.

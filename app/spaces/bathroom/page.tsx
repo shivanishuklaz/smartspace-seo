@@ -1,25 +1,27 @@
+import Link from "next/link";
+
 export default function Bathroom() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       {/* Navigation */}
       <nav className="border-b border-gray-200 bg-white px-6 py-5">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <a href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold">
             SmartSpace
-          </a>
+          </Link>
 
           <div className="flex items-center gap-6 text-sm font-medium text-gray-600">
-            <a href="/" className="hover:text-gray-900">
+            <Link href="/" className="hover:text-gray-900">
               Home
-            </a>
+            </Link>
 
-            <a href="/spaces" className="hover:text-gray-900">
+            <Link href="/spaces" className="hover:text-gray-900">
               Spaces
-            </a>
+            </Link>
 
-            <a href="/#tips" className="hover:text-gray-900">
+            <Link href="/#tips" className="hover:text-gray-900">
               Tips
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

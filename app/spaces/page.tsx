@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const spaces = [
   {
     title: "Bedroom",
@@ -39,30 +41,28 @@ const spaces = [
 export default function Spaces() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      {/* Navigation */}
       <nav className="border-b border-gray-200 bg-white px-6 py-5">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <a href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold">
             SmartSpace
-          </a>
+          </Link>
 
           <div className="flex items-center gap-6 text-sm font-medium text-gray-600">
-            <a href="/" className="hover:text-gray-900">
+            <Link href="/" className="hover:text-gray-900">
               Home
-            </a>
+            </Link>
 
-            <a href="/spaces" className="text-gray-900">
+            <Link href="/spaces" className="text-gray-900">
               Spaces
-            </a>
+            </Link>
 
-            <a href="/#tips" className="hover:text-gray-900">
+            <Link href="/#tips" className="hover:text-gray-900">
               Tips
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
       <section className="bg-gray-950 px-6 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-gray-400">
@@ -80,12 +80,11 @@ export default function Spaces() {
         </div>
       </section>
 
-      {/* Spaces */}
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {spaces.map((space) => (
-              <a
+              <Link
                 key={space.title}
                 href={space.link}
                 className="block rounded-3xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
@@ -115,13 +114,12 @@ export default function Spaces() {
                 <p className="mt-6 text-sm font-semibold">
                   Explore ideas →
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-gray-200 px-6 py-8">
         <div className="mx-auto max-w-6xl text-center text-sm text-gray-500">
           © 2026 SmartSpace. Smart ideas for better living.
